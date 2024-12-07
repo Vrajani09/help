@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <title>About Me</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Host+Grotesk|Zen+Dots"> 
+
+  <style>
+    body {
+      background: black;
+      height: 100%;
+      width: 100%;
+      font-family: "Host Grotesk", sans-serif;
+      margin: 0;
+    }
+
+    .main-text {
+      display: flex;
+      align-items: center;
+      margin-top: 49px;
+      margin-left: 255px;
+      margin-right: 80px;
+    }
+
+    .image-wrapper {
+      position: relative; /* Enables absolute positioning for child elements */
+      height: 710px;
+      width: 550px;
+    }
+
+    .image-wrapper img.main {
+      position: relative; /* Ensures it is above the star */
+      height: 710px;
+      width: 550px;
+      border-radius: 8px;
+      z-index: 1; /* Higher z-index ensures it's above the star */
+    }
+
+    .star {
+      position: absolute;
+      height: 200px; /* Adjust size */
+      width: 200px;
+      z-index: 0; /* Lower z-index places it behind the main image */
+    }
+
+    .star.top-left {
+      top: -50px; /* Adjust position as needed */
+      left: -50px;
+    }
+
+    .star.bottom-right {
+      bottom: -50px; /* Adjust position as needed */
+      right: -50px;
+    }
+
+    .content {
+      max-width: 490px;
+      font-size: 19px;
+      color: AliceBlue;
+      margin-left: 25px; /* Space between image and text */
+    }
+  </style>
+</head>
+<body>
+  <div class="main-text">
+    <div class="image-wrapper">
+      <!-- Star images are now positioned behind the main image -->
+      <img src="star.jpg" alt="Star top left" class="star top-left">
+      <img src="star.jpg" alt="Star bottom right" class="star bottom-right">
+      <img src="farrah.jpg" alt="Owner" class="main">
+    </div>
+    <div class="content">
+      <p>
+        I've always had love for fashion but since I grew up in a family that isn't well-off, I couldn't exactly afford brand new stylish clothes so I resorted to thrifting. Over time, 
+        I realized I had a talent for curating unique, high-quality finds and decided to turn that passion into something bigger.<br><br>
+
+        I wanted to make fashion more personal and accessible, curating pre-loved items that tell a story while reducing waste. Omnitaurus isn’t just about clothes, it’s about inspiring others to embrace being different, celebrate secondhand fashion, and make mindful choices that benefit both their wardrobe and the planet.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+
